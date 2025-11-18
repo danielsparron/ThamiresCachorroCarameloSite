@@ -1,0 +1,138 @@
+/* style.css - Estilos Básicos para o Blog */
+
+/* 1. Reset Básico e Estilos Base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fundo levemente cinza */
+    color: #333;
+}
+
+/* 2. Layout Principal - Centralizar Conteúdo */
+main {
+    max-width: 800px; /* Largura máxima para o conteúdo principal */
+    margin: 20px auto; /* Centraliza o conteúdo e adiciona margem superior/inferior */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para o conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* 3. Cabeçalho e Navegação */
+header {
+    background-color: #4CAF50; /* Cor verde para o cabeçalho */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #45a049;
+    border-radius: 4px;
+}
+
+/* 4. Tipografia e Seções */
+h2, h3 {
+    color: #388E3C; /* Títulos em um tom de verde mais escuro */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* 5. Imagens e Figuras */
+figure {
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* 6. Tabela (Ex: Cronograma de Vacinação) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 7. Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Estilo para a linha horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}

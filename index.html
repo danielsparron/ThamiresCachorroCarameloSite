@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Cachorros</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Blog - Cachorros e seus Cuidados</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- Logo / Nome do site -->
-          <a class="navbar-brand" href="#">Blog dos Cachorros Caramelos</a>
-    
-          <!-- Botão responsivo (hambúrguer) -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <!-- Itens do menu -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> <!-- ms-auto joga pro lado direito -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Usuário - Anônimo</a>
-              </li>
+    <header>
+        <!-- O título principal do site deve ser um H1 para fins de SEO e estrutura -->
+        <h1>Cachorros e seus Cuidados - Blog</h1>
+        
+        <!-- A navegação deve estar dentro de uma tag <nav> -->
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#galeria-imagens">Fotos</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
+    </header>
 
-      <br>
+    <!-- O conteúdo principal da página deve estar dentro da tag <main> -->
+    <main>
+        <!-- Primeira seção de conteúdo: Introdução ao Blog -->
+        <section id="introducao">
+            <!-- Título da seção, agora como H2, seguindo o H1 do header -->
+            <h2 id="inicio">O porquê do Blog?</h2>
+            <p>Este Blog foi criado com o propósito de combater os maus-tratos aos animais, com foco especial em cães de rua. 
+            Nós queremos que isso diminua continuamente. Portanto, o objetivo é alertar as pessoas sobre o que devem fazer para 
+            facilitar a vida dos nossos cãezinhos e promover a conscientização.</p>
+        </section>
 
+        <hr>
 
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Imagens/cachorro-pequeno-sendo-adoravel (1).jpg" class="w-50" alt="Cachorro 01">
-          </div>
-          <div class="carousel-item">
-            <img src="Imagens/cachorro-pequeno-sendo-adoravel.jpg" class="d-block w-50" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="Imagens/cao-dachshund-lambendo-o-nariz.jpg" class="d-block w-50" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-      </div>
+        <!-- Segunda seção de conteúdo: Galeria de Imagens -->
+        <section id="galeria-imagens">
+            <!-- Título da seção -->
+            <h2>Galeria de Imagens</h2>
+            <p>Todas as imagens abaixo foram obtidas no site Freepik e são utilizadas com atribuição.</p>
+            
+            <!-- Uso de <figure> e <figcaption> para agrupar imagens e suas legendas/créditos -->
+            <figure>
+                <img src="Imagens/cachorro-pequeno-sendo-adoravel (1).jpg" alt="Cachorro pequeno e adorável, deitado e olhando para a câmera." width="500" height="300" loading="lazy">
+                <figcaption>
+                    Crédito: <a href="https://br.freepik.com/fotos-gratis/caozinho-sendo-adoravel_15615933.htm#fromView=search&page=1&position=0&uuid=4cd84107-428f-4b71-88bb-f212c2fa657a&query=Cachorro+Caramelo" target="_blank" rel="noopener noreferrer">Link da Imagem (Freepik)</a>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Imagens/cachorro-pequeno-sendo-adoravel.jpg" alt="Cachorro pequeno e adorável, com pelagem clara, em pose brincalhona." width="500" height="300" loading="lazy">
+                <figcaption>
+                    Crédito: <a href="https://br.freepik.com/fotos-gratis/caozinho-sendo-adoravel_15615928.htm#fromView=search&page=1&position=2&uuid=4cd84107-428f-4b71-88bb-f212c2fa657a&query=Cachorro+Caramelo" target="_blank" rel="noopener noreferrer">Link da Imagem (Freepik)</a>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="Imagens/cao-dachshund-lambendo-o-nariz.jpg" alt="Cão da raça Dachshund lambendo o próprio nariz, em close-up." width="500" height="300" loading="lazy">
+                <figcaption>
+                    Crédito: <a href="https://br.freepik.com/imagem-ia-gratis/cao-dachshund-lambendo-o-nariz_418347332.htm#fromView=search&page=1&position=1&uuid=4cd84107-428f-4b71-88bb-f212c2fa657a&query=Cachorro+Caramelo" target="_blank" rel="noopener noreferrer">Link da Imagem (Freepik)</a>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
     
-
-
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <hr>
+    
+    <!-- O rodapé deve usar a tag <footer> -->
+    <footer>
+        <p>Feito por Daniel Santos Parron</p>
+        <!-- Adicionei o ano para boas práticas de rodapé -->
+        <p>&copy; 2025 Blog - Cachorros e seus Cuidados. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
