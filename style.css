@@ -136,3 +136,95 @@ hr {
     background-color: #ddd;
     margin: 30px 0;
 }
+
+/* 8. Sessão de Comentários */
+#comentarios {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fundo suave para a seção */
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#comentarios h2 {
+    font-size: 24px;
+    color: #388E3C; /* Verde escuro, similar aos títulos */
+    margin-bottom: 20px;
+}
+
+#comentarios form {
+    margin-bottom: 20px;
+}
+
+#comentarios label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#comentarios input, #comentarios textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+#comentarios button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#comentarios button:hover {
+    background-color: #45a049;
+}
+
+.comentarios-lista {
+    margin-top: 30px;
+}
+
+.comentario {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comentario p {
+    margin: 5px 0;
+}
+
+.comentario strong {
+    font-size: 16px;
+    color: #388E3C; /* Verde escuro para o nome */
+}
+
+.comentario em {
+    font-size: 0.9em;
+    color: #888; /* Cor cinza para o e-mail */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    #comentarios form {
+        padding: 10px;
+    }
+
+    #comentarios input, #comentarios textarea {
+        font-size: 0.9em;
+    }
+
+    #comentarios button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
